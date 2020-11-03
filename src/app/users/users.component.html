@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <div *ngFor="let item of listUsers">
+        <h3>name : {{item.name}}</h3>
+        <h4>Latitude : {{item.address.geo.lat}}</h4>
+        <h4>Longitude : {{item.address.geo.lng}}</h4>
+        <div *ngFor="let elem of item.address | keyvalue">
+            <h4>{{elem.key}}: {{elem.value}}</h4>
+        </div>
+    </div>
+</div>

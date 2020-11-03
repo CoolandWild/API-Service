@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "serviceapi"
+    }
+  },
+  "defaultProject": "serviceapi",
+  "cli": {
+    "analytics": false
+  }
 }
